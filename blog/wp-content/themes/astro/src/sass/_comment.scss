@@ -1,0 +1,224 @@
+/*------------------------------------------------------------------
+    10. Comment
+-------------------------------------------------------------------*/
+
+.comment_block {
+    padding: 10px 0;
+
+    .commentwrap {
+        padding: 0;
+
+        & > .comment {
+            border-bottom: 1px solid #eee;
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .comment {
+        position: relative;
+        padding: 20px 0;
+
+        .children {
+            clear: both;
+            margin-top: 25px;
+
+            .comment {
+                padding: 25px 0;
+                border-top: 1px solid #eee;
+            }
+        }
+    }
+
+    .user {
+        overflow: hidden;
+
+        .avatar {
+            display: block;
+            float: left;
+            width: 62px;
+            height: 62px;
+            margin: 0;
+            border-radius: 62px;
+        }
+
+        .userinfo {
+            float: left;
+            margin-left: 23px;
+        }
+
+        .number {
+            font-size: 35px;
+            font-weight: 600;
+            display: block;
+            float: right;
+            margin-top: 10px;
+            color: #efefef;
+        }
+
+        h4 {
+            font: 700 24px 'Domine', Serif;
+            margin: 5px 0;
+        }
+
+        h4 a {
+            color: #232730;
+        }
+
+        h5 {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 8px 0;
+            color: #abaeb6;
+
+            span {
+                color: #65686e;
+            }
+        }
+
+        .status {
+            font-family: 'Open Sans', serif;
+            font-size: 14px;
+            font-weight: 600;
+            display: none;
+            margin-right: 10px;
+            padding: 6px 12px 5px;
+            vertical-align: 3px;
+            text-transform: uppercase;
+            color: #fff;
+            border-radius: 4px;
+            background: #026ed6;
+        }
+    }
+
+    .body {
+        p {
+            clear: both;
+            margin: 15px 0;
+            padding-left: 82px;
+        }
+    }
+
+    .comment-reply-link {
+        font-size: 14px;
+        font-weight: 600;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        padding: 4px 12px 3px;
+        color: #ccc;
+        border-radius: 4px;
+        background: #f6f6f6;
+
+        &:hover {
+            color: #949494;
+        }
+    }
+
+    @media screen and (max-width: 470px) {
+        .user .avatar {
+            display: none;
+        }
+
+        .body p {
+            padding-left: 0;
+        }
+
+        .user .userinfo {
+            margin-left: 0;
+        }
+    }
+}
+
+.children .comment {
+    padding-top: 20px;
+}
+
+.bypostauthor > .user .status {
+    display: inline-block;
+}
+
+.comment .children .comment:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#respond {
+    margin-top: 60px;
+
+    input[type='text'] {
+        font-size: 14px;
+        font-weight: 600;
+        float: left;
+        width: 30%;
+        margin-right: 5%;
+        margin-bottom: 30px;
+        transition: border-color 0.2s ease-out;
+        border: 2px solid rgb(201, 201, 201);
+    }
+
+    #url {
+        margin-right: 0;
+    }
+
+    input[type='text']:focus {
+        border-color: #3c81c3;
+    }
+
+    textarea {
+        display: block;
+        clear: both;
+        margin-bottom: 30px;
+    }
+
+    .form-submit {
+        display: block;
+        clear: both;
+        margin-bottom: 30px;
+    }
+
+    #submit {
+        font-size: 14px;
+        font-weight: 600;
+        display: inline-block;
+        padding: 11px 22px 9px;
+        transition: all 0.2s ease-in-out;
+        color: #fff;
+        border: 2px solid #0066d9;
+        border-radius: 4px;
+        background: #0066d9;
+
+        &:hover {
+            color: #686868;
+            border: 2px solid #c3c2c9;
+            background: #fff;
+        }
+    }
+}
+
+.commentbody {
+    font-size: 16px;
+    font-weight: 600;
+    clear: both;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    transition: border-color 0.2s ease-out;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+        border-color: #3c81c3;
+    }
+}
+
+#reply-title .graybar {
+    line-height: 27px;
+}
+
+#cancel-comment-reply-link {
+    font-family: 'Open Sans', Sans-Serif;
+}

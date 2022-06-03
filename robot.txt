@@ -1,0 +1,23 @@
+User-agent: *
+Disallow: /signup/
+Disallow: /login/
+Disallow: /admin/
+Disallow: *utm=
+Allow: /blog/
+Crawl-Delay: 5
+
+User-agent: GoogleBot
+Disallow: /signup/
+Disallow: /login/
+Disallow: /admin/
+Disallow: *utm=
+
+User-agent: Yandex
+Disallow: /signup/
+Disallow: /login/
+Disallow: /admin/
+Disallow: *utm=
+Clean-Param: utm_source&utm_medium&utm_campaign
+Crawl-Delay: 0.5
+
+Host: https://usefocus.co

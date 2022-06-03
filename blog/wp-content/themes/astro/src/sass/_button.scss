@@ -1,0 +1,336 @@
+/*------------------------------------------------------------------
+    4. Button
+-------------------------------------------------------------------*/
+
+.smallbutton {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    display: inline-block;
+    padding: 9px 26px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 4px;
+
+    i {
+        margin-right: 15px;
+    }
+
+    &.blue {
+        color: #fff;
+        border: 2px solid #0066d9;
+        background: #0066d9;
+
+        &:hover {
+            color: #686868;
+            border: 2px solid #c3c2c9;
+            background: #fff;
+        }
+    }
+
+    &.lightgray {
+        color: #686868;
+        border: 2px solid #c3c2c9;
+        background: #fff;
+
+        a {
+            color: #686868;
+        }
+
+        &:hover {
+            color: #fff;
+            border: 2px solid #0066d9;
+            background: #0066d9;
+        }
+    }
+
+    &.solidgray {
+        color: #858585;
+        border: 2px solid #edebf3;
+        background: #edebf3;
+
+        a {
+            color: #858585;
+        }
+
+        &:hover {
+            color: #858585;
+            border: 2px solid #edebf3;
+            background: #fff;
+        }
+    }
+}
+
+.smallsocialbutton {
+    display: block;
+    width: 32px;
+    height: 28px;
+    margin: 0 3px;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    color: #606060;
+    border-radius: 36px;
+    background: #efefef;
+
+    i {
+        position: relative;
+        margin-top: 8px;
+    }
+
+    &.twitter:hover {
+        color: #fff;
+        background: #00acee;
+    }
+
+    &.facebook:hover {
+        color: #fff;
+        background: #3b5998;
+    }
+
+    &.github:hover {
+        color: #fff;
+        background: #171515;
+    }
+
+    &.instagram:hover {
+        color: #fff;
+        background: #3f729b;
+    }
+
+    &.rss:hover {
+        color: #fff;
+        background: #ee802f;
+    }
+}
+
+.social {
+    .twitter {
+        -webkit-box-shadow: inset 0 0 0 20px $twitter_color;
+                box-shadow: inset 0 0 0 20px $twitter_color;
+
+        &:hover {
+            color: $twitter_color;
+            -webkit-box-shadow: inset 0 0 0 2px $twitter_color;
+                    box-shadow: inset 0 0 0 2px $twitter_color;
+        }
+    }
+
+    .facebook {
+        -webkit-box-shadow: inset 0 0 0 20px $facebook_color;
+                box-shadow: inset 0 0 0 20px $facebook_color;
+
+        &:hover {
+            color: $facebook_color;
+            -webkit-box-shadow: inset 0 0 0 2px $facebook_color;
+                    box-shadow: inset 0 0 0 2px $facebook_color;
+        }
+    }
+
+    .github {
+        -webkit-box-shadow: inset 0 0 0 20px $github_color;
+                box-shadow: inset 0 0 0 20px $github_color;
+
+        &:hover {
+            color: $github_color;
+            -webkit-box-shadow: inset 0 0 0 2px $github_color;
+                    box-shadow: inset 0 0 0 2px $github_color;
+        }
+    }
+
+    .rss {
+        -webkit-box-shadow: inset 0 0 0 20px $rss_color;
+                box-shadow: inset 0 0 0 20px $rss_color;
+
+        &:hover {
+            color: $rss_color;
+            -webkit-box-shadow: inset 0 0 0 2px $rss_color;
+                    box-shadow: inset 0 0 0 2px $rss_color;
+        }
+    }
+
+    .youtube {
+        -webkit-box-shadow: inset 0 0 0 20px $youtube_color;
+                box-shadow: inset 0 0 0 20px $youtube_color;
+
+        &:hover {
+            color: $youtube_color;
+            -webkit-box-shadow: inset 0 0 0 2px $youtube_color;
+                    box-shadow: inset 0 0 0 2px $youtube_color;
+        }
+    }
+
+    .dribbble {
+        -webkit-box-shadow: inset 0 0 0 20px $dribbble_color;
+                box-shadow: inset 0 0 0 20px $dribbble_color;
+
+        &:hover {
+            color: $dribbble_color;
+            -webkit-box-shadow: inset 0 0 0 2px $dribbble_color;
+                    box-shadow: inset 0 0 0 2px $dribbble_color;
+        }
+    }
+
+    .googleplus {
+        -webkit-box-shadow: inset 0 0 0 20px $google_color;
+                box-shadow: inset 0 0 0 20px $google_color;
+
+        &:hover {
+            color: $google_color;
+            -webkit-box-shadow: inset 0 0 0 2px $google_color;
+                    box-shadow: inset 0 0 0 2px $google_color;
+        }
+    }
+
+    .instagram {
+        -webkit-box-shadow: inset 0 0 0 20px $instagram_color;
+                box-shadow: inset 0 0 0 20px $instagram_color;
+
+        &:hover {
+            color: $instagram_color;
+            -webkit-box-shadow: inset 0 0 0 2px $instagram_color;
+                    box-shadow: inset 0 0 0 2px $instagram_color;
+        }
+    }
+
+    .linkedin {
+        -webkit-box-shadow: inset 0 0 0 20px $linkedin_color;
+                box-shadow: inset 0 0 0 20px $linkedin_color;
+
+        &:hover {
+            color: $linkedin_color;
+            -webkit-box-shadow: inset 0 0 0 2px $linkedin_color;
+                    box-shadow: inset 0 0 0 2px $linkedin_color;
+        }
+    }
+
+    .pinterest {
+        -webkit-box-shadow: inset 0 0 0 20px $pinterest_color;
+                box-shadow: inset 0 0 0 20px $pinterest_color;
+
+        &:hover {
+            color: $pinterest_color;
+            -webkit-box-shadow: inset 0 0 0 2px $pinterest_color;
+                    box-shadow: inset 0 0 0 2px $pinterest_color;
+        }
+    }
+
+    .reddit {
+        -webkit-box-shadow: inset 0 0 0 20px $reddit_color;
+                box-shadow: inset 0 0 0 20px $reddit_color;
+
+        &:hover {
+            color: $reddit_color;
+            -webkit-box-shadow: inset 0 0 0 2px $reddit_color;
+                    box-shadow: inset 0 0 0 2px $reddit_color;
+        }
+    }
+
+    .skype {
+        -webkit-box-shadow: inset 0 0 0 20px $skype_color;
+                box-shadow: inset 0 0 0 20px $skype_color;
+
+        &:hover {
+            color: $skype_color;
+            -webkit-box-shadow: inset 0 0 0 2px $skype_color;
+                    box-shadow: inset 0 0 0 2px $skype_color;
+        }
+    }
+
+    .tumblr {
+        -webkit-box-shadow: inset 0 0 0 20px $tumblr_color;
+                box-shadow: inset 0 0 0 20px $tumblr_color;
+
+        &:hover {
+            color: $tumblr_color;
+            -webkit-box-shadow: inset 0 0 0 2px $tumblr_color;
+                    box-shadow: inset 0 0 0 2px $tumblr_color;
+        }
+    }
+
+    .vine {
+        -webkit-box-shadow: inset 0 0 0 20px $vine_color;
+                box-shadow: inset 0 0 0 20px $vine_color;
+
+        &:hover {
+            color: $vine_color;
+            -webkit-box-shadow: inset 0 0 0 2px $vine_color;
+                    box-shadow: inset 0 0 0 2px $vine_color;
+        }
+    }
+
+    .vk {
+        -webkit-box-shadow: inset 0 0 0 20px $vk_color;
+                box-shadow: inset 0 0 0 20px $vk_color;
+
+        &:hover {
+            color: $vk_color;
+            -webkit-box-shadow: inset 0 0 0 2px $vk_color;
+                    box-shadow: inset 0 0 0 2px $vk_color;
+        }
+    }
+
+    .flickr {
+        -webkit-box-shadow: inset 0 0 0 20px $flickr_color;
+                box-shadow: inset 0 0 0 20px $flickr_color;
+
+        &:hover {
+            color: $flickr_color;
+            -webkit-box-shadow: inset 0 0 0 2px $flickr_color;
+                    box-shadow: inset 0 0 0 2px $flickr_color;
+        }
+    }
+
+    .stackoverflow {
+        -webkit-box-shadow: inset 0 0 0 20px $stackoverflow_color;
+                box-shadow: inset 0 0 0 20px $stackoverflow_color;
+
+        &:hover {
+            color: $stackoverflow_color;
+            -webkit-box-shadow: inset 0 0 0 2px $stackoverflow_color;
+                    box-shadow: inset 0 0 0 2px $stackoverflow_color;
+        }
+    }
+
+    .twitch {
+        -webkit-box-shadow: inset 0 0 0 20px $twitch_color;
+                box-shadow: inset 0 0 0 20px $twitch_color;
+
+        &:hover {
+            color: $twitch_color;
+            -webkit-box-shadow: inset 0 0 0 2px $twitch_color;
+                    box-shadow: inset 0 0 0 2px $twitch_color;
+        }
+    }
+
+    .vimeo {
+        -webkit-box-shadow: inset 0 0 0 20px $vimeo_color;
+                box-shadow: inset 0 0 0 20px $vimeo_color;
+
+        &:hover {
+            color: $vimeo_color;
+            -webkit-box-shadow: inset 0 0 0 2px $vimeo_color;
+                    box-shadow: inset 0 0 0 2px $vimeo_color;
+        }
+    }
+
+    .weibo {
+        -webkit-box-shadow: inset 0 0 0 20px $weibo_color;
+                box-shadow: inset 0 0 0 20px $weibo_color;
+
+        &:hover {
+            color: $weibo_color;
+            -webkit-box-shadow: inset 0 0 0 2px $weibo_color;
+                    box-shadow: inset 0 0 0 2px $weibo_color;
+        }
+    }
+
+    .soundcloud {
+        -webkit-box-shadow: inset 0 0 0 20px $soundcloud_color;
+                box-shadow: inset 0 0 0 20px $soundcloud_color;
+
+        &:hover {
+            color: $soundcloud_color;
+            -webkit-box-shadow: inset 0 0 0 2px $soundcloud_color;
+                    box-shadow: inset 0 0 0 2px $soundcloud_color;
+        }
+    }
+}

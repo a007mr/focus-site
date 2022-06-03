@@ -1,0 +1,29 @@
+/*------------------------------------------------------------------
+    9. Page
+-------------------------------------------------------------------*/
+
+body.page {
+    .profile {
+        display: none;
+    }
+
+    .postprofile {
+        display: none;
+    }
+
+    .comments {
+        display: none;
+    }
+
+    .posts article header .meta {
+        display: none;
+    }
+
+    .posts article footer ul.share {
+        display: none;
+    }
+
+    .cover header .meta {
+        display: none;
+    }
+}

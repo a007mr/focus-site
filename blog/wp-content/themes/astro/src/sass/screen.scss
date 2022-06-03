@@ -1,0 +1,51 @@
+/*!
+
+    Theme Name: Astro
+    Theme URI: https://ecko.me/
+    Description: Astro Theme for WordPress developed by EckoThemes.
+    Author: EckoThemes
+    Author URI: https://ecko.me/
+    Version: 4.5.0
+    License: Envato Split License
+    License URI: https://themeforest.net/licenses/faq
+    Tags: three-columns
+    Text Domain: astro
+
+*/
+
+/*------------------------------------------------------------------
+
+    1. Normalize
+    2. Vars
+    3. Global
+    4. Button
+    5. Navigation
+    6. Profile
+    7. Index
+    8. Post
+    9. Page
+    10. Comment
+    11. Syntax Highlighter
+    12. Widgets
+    13. FontAwesome
+    14. WordPress
+    15. Copyright
+
+-------------------------------------------------------------------*/
+
+@import 'normalize';
+@import 'vars';
+
+@import 'global';
+@import 'button';
+@import 'navigation';
+@import 'profile';
+@import 'index';
+@import 'post';
+@import 'page';
+@import 'comment';
+@import 'syntax';
+@import 'widgets';
+@import 'fontawesome';
+@import 'wordpress';
+@import 'copyright';

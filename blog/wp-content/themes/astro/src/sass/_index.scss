@@ -1,0 +1,208 @@
+/*------------------------------------------------------------------
+    7. Index
+-------------------------------------------------------------------*/
+
+.index {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 20px;
+    color: #ececf1;
+    background-color: #272727;
+    background-color: rgba(#272727, 0.9);
+    background-image: linear-gradient(rgba(#272727, 0.9), rgba(#383838, 0.9));
+
+    h1,
+    h2 {
+        font-family: 'Open Sans', serif;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 26px;
+        margin: 0;
+        padding: 0;
+        color: #fff;
+    }
+
+    h2 {
+        font-family: 'Open Sans', serif;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .show {
+        display: block;
+    }
+
+    @media screen and (max-width: 790px) {
+        h1 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 675px) {
+        display: none !important;
+    }
+}
+
+.search {
+    .searchbar {
+        position: fixed;
+        z-index: 400;
+        bottom: 0;
+        left: 0;
+        display: none;
+        width: 100%;
+        height: 65px;
+        border: 0;
+        background: rgba(26, 26, 26, 0.82);
+
+        input {
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            padding: 20px 70px;
+            color: #fff;
+            border: 0;
+            outline: none;
+            outline: 0;
+            background: transparent;
+
+            &:focus {
+                border: 0 !important;
+            }
+        }
+    }
+
+    .searchopen {
+        position: fixed;
+        z-index: 420;
+        bottom: 14px;
+        left: 15px;
+        display: block;
+        width: 32px;
+        height: 32px;
+        text-align: center;
+        color: #d9d9d9;
+        border: 2px solid #d9d9d9;
+        border-radius: 28px;
+
+        i {
+            margin-top: 8px;
+        }
+
+        &:hover {
+            color: #fff;
+            border-color: #026ed6;
+            background: #026ed6;
+        }
+
+        &.active {
+            color: #aaa;
+            border-color: #fff;
+            background: #fff;
+        }
+    }
+
+    @media screen and (max-width: 996px) {
+        display: none;
+    }
+}
+
+body.search {
+    display: block;
+
+    @media screen and (max-width: 996px) {
+        display: block;
+    }
+}
+
+.postsearch {
+    display: none;
+    clear: both;
+    overflow: hidden;
+    margin: 0 0 30px;
+
+    .query {
+        font-size: 18px;
+        font-weight: 600;
+        float: left;
+        width: 65%;
+        border-color: #c7c7c7;
+        outline: none;
+    }
+
+    .submit {
+        float: right;
+        width: 25%;
+        padding: 14px 24px 11px;
+    }
+
+    @media screen and (max-width: 996px) {
+        display: block;
+    }
+
+    @media screen and (max-width: 514px) {
+        display: block;
+
+        .query {
+            display: block;
+            float: none;
+            width: 100%;
+        }
+
+        .submit {
+            display: block;
+            float: none;
+            width: 100%;
+            margin-top: 15px;
+        }
+    }
+}
+
+.error404 footer .postsearch {
+    display: block;
+
+    @media screen and (max-width: 996px) {
+        display: block;
+    }
+}
+
+.admin-bar {
+    .title a {
+        margin-top: 30px;
+    }
+
+    nav {
+        margin-top: 30px;
+    }
+
+    .index {
+        margin-top: 30px;
+    }
+}
+
+.indexfeature {
+    .profileimage {
+        margin: 30px 0 20px;
+    }
+
+    header.wrapper {
+        top: 36%;
+    }
+
+    p {
+        font-size: 20px;
+        line-height: 38px;
+        margin: 20px 0;
+        color: #fff;
+    }
+}
+
+.home .profile.featured {
+    display: none;
+}

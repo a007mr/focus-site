@@ -1,0 +1,42 @@
+/*------------------------------------------------------------------
+    12. Widgets
+-------------------------------------------------------------------*/
+
+.widget {
+    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+
+    hr {
+        display: none;
+    }
+
+    h3 {
+        font-size: 20px;
+        margin-top: 0;
+    }
+
+    ul {
+        margin-bottom: 0;
+    }
+
+    &:first-of-type {
+        padding-top: 0;
+    }
+}
+
+.widget.widget_search {
+    .postsearch {
+        display: block;
+        margin: 0;
+    }
+    .submit {
+        display: none;
+    }
+    .query {
+        width: 100%;
+        border: 1px solid #ccc;
+        &:focus {
+            border: 1px solid #4c4c4c;
+        }
+    }
+}

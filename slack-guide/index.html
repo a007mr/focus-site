@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Guide for Slack: how to set Focus bot in Slack">
+	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../img/favicon.png" rel="apple-touch-icon" sizes="32x32">
+	<title>Slack Guide: how to set Focus bot in Slack</title>
+	
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../css/style.css?dad" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" type="text/css"/>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/animate.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145269853-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-145269853-1');
+	</script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(54762823, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/54762823" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+	<!-- Heap Analytics -->
+    <script type="text/javascript">
+      window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+      heap.load("2404494712");
+    </script>
+    <!-- End of Heap -->
+
+	<!-- Start of Async Drift Code -->
+	<script>
+	"use strict";
+
+	!function() {
+	  var t = window.driftt = window.drift = window.driftt || [];
+	  if (!t.init) {
+	    if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+	    t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+	    t.factory = function(e) {
+	      return function() {
+	        var n = Array.prototype.slice.call(arguments);
+	        return n.unshift(e), t.push(n), t;
+	      };
+	    }, t.methods.forEach(function(e) {
+	      t[e] = t.factory(e);
+	    }), t.load = function(t) {
+	      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+	      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+	      var i = document.getElementsByTagName("script")[0];
+	      i.parentNode.insertBefore(o, i);
+	    };
+	  }
+	}();
+	drift.SNIPPET_VERSION = '0.3.1';
+	drift.load('2zzhwx4myb4u');
+	</script>
+	<!-- End of Async Drift Code -->
+</head>
+<body>
+
+	<nav class="navbar navbar-lp bg-light">
+		<div class="container navigation">
+			<div class="logo">
+				<a href="https://usefocus.co"><img src="../img/logo/logo.png" alt="Focus logo" class="logo_img" width="122" height="35"></a>
+			</div>
+
+			<div class="navigation_items nav_list">
+				<ul class="menu lp_menu">
+					<li class="menu-item"><a href="https://usefocus.co/" class="landing_font">Main</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#why" class="landing_font">About bot</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#about" class="landing_font">Features</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#how" class="landing_font">How it works</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/blog/" class="landing_font">Blog</a></li>
+					<!-- <li class="menu-item"><a class="landing_font">Eng <i class="fas fa-caret-down"></i></a>
+						<ul class="sub-menu">
+							<li><a class="landing_font" href="https://usefocus.co/">English</a></li>
+							<li><a class="landing_font" href="https://usefocus.co/ru">Russian</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			</div>
+
+	
+			<div class="btn_nav">
+				<a href="https://app.usefocus.co/login" class="btn btn-light" onclick="gtag('event', 'btn', {'event_category': 'knopka3', 'event_action': 'submit3'});yaCounter54762823.reachGoal('signup_nav'); return true;">Sign In</a>
+			</div>
+
+			<div class="menu_icon-lp" id="menu_icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
+
+	<section class="slack-guide" id="slack">
+		<div class="container hero__slack">
+			<div class="hero__slack-main">
+				<h1 class="h1_lp fs5">Focus bot: Guide for Slack</h1>
+				<p class="landing_font lead fs2_5 pt-2-xs">How to install and use Focus bot for Slack</p>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="slack-guide" id="instructions">
+		<div class="container">
+			<div class="ma-w800 mxa">
+				<h2 class="pt-1 text-center">How to install</h2>
+				<div class="py-2">
+					<p class="large bold pb-xs">Important!</p>
+					<p class="medium mb-xs">Please use the same email address on Focus that you use on Slack.</p>
+					<div class="ps">
+						<p class="medium black lh-25 text-left mxa mb-xs"><span class="medium bold">For teams that have already used Focus,</span> you will add the Focus bot to your existed Focus account. Make sure your email address matches the one you use in Slack.</p>
+						<p class="medium black lh-25 text-left mxa"><span class="medium bold">If you haven't registered at Focus  or your email address at Focus doesn't match the one you use in Slack,</span> adding the Focus bot to your Slack workspace creates the new workspace at Focus.</p>
+				</div>
+				</div>
+
+				<div class="py-2">
+					<p class="large text-center green">User's email address on Slack = User's email address on Focus</p>
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-xs">Step 1</p>
+					<p class="medium pb-2">Add Focus bot in your Slack team by clicking the button 'Add to Slack’. <br>You can click the "Add to Slack" button either on the Slack App Directory or in the <a href="https://app.usefocus.co/settings/integrations" class="blue underline">Integrations</a> menu in Focus.</p>
+					<img src="../img/guides/slack-auth-btn.png" alt="Slack button in Focus">
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-xs">Step 2</p>
+					<p class="medium pb-2">Allow the bot installation in Slack.</p>
+					<img src="../img/guides/slack-auth.png" alt="Slack button in Focus">
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-xs">Step 3</p>
+					<p class="medium pb-2">Boom! That’s all. <br><b>Congratulations!</b> Focus bot was installed in your Slack workspace.</p>
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-xs">Step 4 (invite your teammates)</p>
+					<p class="medium pb-2">After that, you can invite your teammates to Focus. Make sure the email addresses match the ones you use in Slack.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="slack-guide" id="settings">
+		<div class="container">
+			<div class="ma-w800 mxa">
+				<h2 class="pt-1 text-center">How to use</h2>
+				<div class="py-2">
+					<p class="medium">Focus sends your team notifications when it's time for daily check-in or weekly plan according to the schedule in settings.</p>
+					<p class="medium py-2">By default, you have 3 active campaigns at Focus: <b>daily check-ins, weekly plans, and weekly updates</b>. If you want to change something (time, questions, participants) or turn off notifications, you can easily manage it in the Settings menu (daily check-ins, weekly updates, weekly plans). </p>
+					<p class="medium"><b>Default settings:</b> Focus sends a DM to everyone when it's time to share a check-in or an update; the administrator, who installed the Focus bot, will get all responses.</p>
+					
+				</div>
+				<div class="py-2">
+					<p class="fs-25 bold pb-1">Check-in campaigns settings </p>
+					<p class="medium">To edit bot's settings, you should use <a href="https://app.usefocus.co/settings" class="blue underline">the Settings menu</a>. There are settings for all campaigns: daily check-ins, weekly updates, weekly plans, and icebreakers. Also, you can create your own campaigns like Monthly Retrospective, Backlog Grooming, or any other. To do that, click on the button “Create Campaign” and follow the form.</p>
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-xs">What can you change in Focus bot settings?</p>
+					<p class="medium pb-2">– Choose channels or users who will participate in the campaign. By default, everyone participates. <br>– Choose a channel or a user who will get team reports <br>– Choose the type of check-ins: common or asynchronous check-ins <br>– Change the time and questions
+					</p>
+				</div>
+
+				<div class="py-2">
+					<img src="../img/guides/slack-settings-1.png" alt="Slack settings in Focus">
+					<p class="small text-center pt-1">Here is the section for managing bot's settings</p>
+					<p class="medium pt-2 pb-1"><b>Status</b> shows the bot status. If you want to turn the bot off, just click on the status to switch the bot.</p>
+					<p class="medium pb-1"><b>Participants</b>: users or channels for the campaign. You can choose specific users for participation in the check-in or update. If you choose a public channel, then everyone in that channel will get notifications about check-in. In this case, please <b>add the Focus bot to this channel</b>.</p>
+					<p class="medium pb-1"><b>Delivery results</b>: You can receive reports with check-ins or weekly updates in direct messages for users or in public channels. Specify users and/or channels whom bot will send reports in the Delivery results section. Just click on the button ‘Choose channels’ and specify it. If you choose public channel for reports, please <b>add the Focus bot to this channel</b>.</p>
+					<p class="medium pb-2"><b>Asynchronous Check-ins</b>: Make Asynchronous Check-ins or Updates active, if you want to run this type of event. If Asynchronous Check-ins is disabled then Classic Check-in works. The same is actual for Asynchronous Weekly Updates or Plans.</p>
+
+					<p class="medium pb-2">By default, the bot runs Classic Check-in when all users get questions at the same time. If you want to manage check-ins for the team in different timezones you might choose Asynchronous Check-ins. In Asynchronous Check-ins, the bot will send the questions in the same LOCAL time. </p>
+
+					<p class="medium bold pb-1">Example for the team that works in different timezones (New York, San Francisco, London):</p>
+
+					<p class="medium pb-1"><b>Check-in time in settings:</b> 10 am <br><b>Head office:</b> New York</p>
+
+					<p class="medium pb-1"><b>Classic Check-in</b> begins in NY time: <br>- 10 am in NY (UTC-5) <br>- 7 am in SF (UTC-8)<br>- 3 pm in London (UTC+0)</p>
+
+					<p class="medium pb-1"><b>Asynchronous Check-ins</b> begins in: <br>- 10 am in NY<br>- 10 am in SF <br>- 10 am in London</p>
+				</div>
+
+				<div class="py-2">
+					<p class="large bold pb-2">Check-in or Update results</p>
+					<img src="../img/guides/slack-report-2.png" alt="Standup report in Slack">
+					<p class="small text-center pt-1">Here is the picture of the check-in in Slack</p>
+					<p class="medium pt-2 pb-1">You can receive check-in results in Slack (if you specified it on Settings) and in Focus web app. </p>
+					<p class="medium"><a href="https://app.usefocus.co/settings/edit_standup" class="blue underline">Daily Check-ins settings in Focus</a> <br><a href="https://app.usefocus.co/settings/edit_updates" class="blue underline">Weekly Updates settings in Focus</a></p>
+					<p class="medium"><a href="https://app.usefocus.co/settings/edit_plans" class="blue underline">Weekly Plans settings in Focus</a></p>
+					<p class="medium"><a href="https://app.usefocus.co/settings/edit_icebreakers" class="blue underline">Icebreaker settings in Focus</a></p>
+				</div>
+
+				<div class="py-2">
+					<p class="fs-25 bold pb-1 mt-3">OKRs settings </p>
+					<p class="medium">If you create Objectives at Focus, the Focus bot will send notifications when someone updates OKRs (Objective and Key Results). It helps to sync the team and focus on the most important things. To use it, please specify a public channel for OKRs notifications and add the Focus bot to the channel.</p>
+				</div>
+				<div class="pb-2">
+					<img src="../img/guides/slack-okr.png" alt="OKRs settings for Slack">
+					<p class="medium">Also, the bot can remind users who didn’t update their OKRs last week or last 2 weeks.</p>
+				</div>
+				<div class="py-xs">
+					<p class="medium"><a href="https://app.usefocus.co/settings/slack/edit_okr" class="blue underline">You can edit OKR settings here.</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div class="container">
+			<div class="footer_nav">
+				<ul class="menu">
+					<li class="menu-item"><a href="https://usefocus.co">Main</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#why">About bot</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#about">Features</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/slack#how">How it works</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/blog/">Blog</a></li>
+					<li class="menu-item"><a href="https://usefocus.co/privacy-policy/">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<span class="landing_font">© 2022 Focus. All rights reserved.</span>	
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="https://static.mailerlite.com/js/w/webforms.min.js?vd890ed88b3a28c805acc70e1a88fa27c" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="../js/scripts.js?xfoa"></script>
+	<script src="../js/bootstrap.js"></script>
+<!-- 	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script> -->
+
+</body>
+</html>

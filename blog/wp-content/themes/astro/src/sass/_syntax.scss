@@ -1,0 +1,116 @@
+/*------------------------------------------------------------------
+    11. Syntax Highlighter
+-------------------------------------------------------------------*/
+
+pre {
+    line-height: 19px;
+    margin: 35px 0;
+    padding: 6px 10px;
+    padding: 25px 30px;
+    word-wrap: break-word;
+    color: #f8f8f2;
+    border-radius: 3px;
+    background: #1e2328;
+}
+
+code {
+    font-size: 16px;
+    margin: 0 2px;
+    padding: 0 5px;
+    color: #161617;
+    border: 1px solid #eaeaea;
+    background: transparent;
+}
+
+pre code {
+    line-height: 29px;
+    margin: 0;
+    padding: 0;
+    color: #f8f8f2;
+    color: #f8f8f2;
+    border: 0;
+    border-radius: 0;
+    background: #1e2328;
+}
+
+pre,
+code {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    border-radius: 3px;
+}
+
+pre,
+pre code {
+    font-size: 14px;
+}
+
+pre .comment {
+    color: rgb(113, 126, 139);
+}
+
+pre .constant {
+    color: #ff6b6b;
+}
+
+pre .constant.language {
+    color: #268bd2;
+}
+
+pre .constant.regexp {
+    color: #2aa198;
+}
+
+pre .storage {
+    color: #4ca9eb;
+}
+
+pre .string,
+pre .comment.docstring {
+    color: #c7f464;
+}
+
+pre .support.tag.script,
+pre .support.tag.style {
+    color: #2aa198;
+}
+
+pre .string.regexp {
+    color: #2aa198;
+}
+
+pre .string.regexp.open,
+pre .string.regexp.close {
+    color: #2aa198;
+}
+
+pre .keyword,
+pre .selector {
+    color: #4ecdc4;
+}
+
+pre .inherited-class {
+    font-style: italic;
+}
+
+pre .entity {
+    color: #ff5454;
+}
+
+pre .support,
+*[data-language='c'] .function.call {
+    color: #8ad6f2;
+}
+
+pre .support.method {
+    color: #839496;
+}
+
+pre .support.property {
+    color: #839496;
+}
+
+pre .variable.global,
+pre .variable.class,
+pre .variable.instance {
+    color: #839496;
+}

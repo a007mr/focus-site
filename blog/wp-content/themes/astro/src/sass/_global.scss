@@ -1,0 +1,505 @@
+/*------------------------------------------------------------------
+    3. Global
+-------------------------------------------------------------------*/
+
+body,
+html {
+    font: 400 16px 'Open Sans', serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #3b3b3b;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: #fff;
+}
+
+a {
+    font-weight: 600;
+    transition: border 0.2s, color 0.2s ease-out;
+    text-decoration: none;
+    color: #026ed2;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        color: #296298;
+    }
+}
+
+h1 a:hover,
+p a:hover {
+    border-bottom: 3px solid #f1ece9;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font: 700 34px 'Domine', Serif;
+    line-height: 56px;
+    margin: 30px 0;
+    color: #262b30;
+
+    i {
+        margin-right: 15px;
+    }
+}
+
+h2 {
+    font: 700 26px 'Domine', Serif;
+    margin: 30px 0 20px;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 20px 0 10px;
+}
+
+p {
+    line-height: 38px;
+    margin: 30px 0;
+    word-wrap: break-word;
+    color: #333332;
+}
+
+strong,
+em {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto !important;
+    max-height: 100%;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+hr {
+    width: 70%;
+    height: 3px;
+    margin: 30px auto;
+    border: 0;
+    background: #d8d6de;
+}
+
+.thinhr {
+    width: 100%;
+    height: 1px;
+}
+
+code {
+    margin: 0 5px;
+    padding: 2px 6px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background: #f3f3f3;
+}
+
+blockquote,
+.gallery-caption {
+    font: 700 18px 'Domine', Serif;
+    line-height: 38px;
+    margin: 30px 0 30px 4%;
+    padding: 5px 4%;
+    border-left: 3px solid #c6d5e1;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+q,
+cite {
+    font: 700 18px 'Domine', Serif;
+    line-height: 38px;
+    padding: 5px 5px;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.smallprofile {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 6px 0 11px;
+    vertical-align: -4px;
+    border-radius: 20px;
+}
+
+input:not([type=submit]):not([type=file]) {
+    font-size: 15px;
+    font-weight: 600;
+    box-sizing: border-box;
+    padding: 13px 15px 10px;
+    transition: all 0.2s ease-out;
+    border: 2px solid #808080;
+    border-radius: 4px;
+    outline: 0;
+    background: #fff;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+input:not([type=submit]):not([type=file]):active,
+input:not([type=submit]):not([type=file]):focus {
+    border: 2px solid #2d75a2;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #2d75a2;
+    text-shadow: none;
+}
+
+::selection {
+    color: #fff;
+    background: #2d75a2;
+    text-shadow: none;
+}
+
+.title a {
+    position: fixed;
+    z-index: 200;
+    top: 18px;
+    left: 18px;
+    display: block;
+    transition: background 0.6s ease-out;
+    color: #fff;
+
+    img {
+        margin: 0;
+    }
+
+    &.icon {
+        top: 13px;
+        left: 13px;
+        padding: 9px 12px 6px;
+        background: #29292a;
+    }
+
+    &.image {
+        position: absolute;
+        padding: 9px 12px 1px;
+        background: #29292a;
+    }
+
+    &:hover {
+        background: #3287c1;
+    }
+
+    i {
+        margin-top: 5px;
+    }
+
+    span {
+        display: inline-block;
+        margin-left: 15px;
+
+        @media screen and (max-width: 1140px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 595px) {
+            display: inline-block;
+        }
+    }
+
+    &:hover span {
+        display: inline-block;
+        width: auto;
+    }
+
+    @media screen and (max-width: 906px) {
+        position: absolute;
+        position: absolute;
+        top: 30px;
+        left: 5%;
+        display: inline-block;
+        margin-top: 30px;
+    }
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.notification {
+    margin-top: 50px;
+    padding: 20px 25px;
+    border-radius: 4px;
+    background: #1c78be;
+
+    .ntitle {
+        font-size: 18px;
+        font-weight: 700;
+        padding-right: 20px;
+        color: #c4e2f8;
+        border-right: 2px solid #3285c4;
+    }
+
+    .message {
+        font-size: 18px;
+        font-weight: 700;
+        padding-left: 20px;
+        color: #fff;
+    }
+
+    a {
+        position: relative;
+        display: inline-block;
+        float: right;
+        margin-top: -3px;
+        padding: 4px 10px 3px;
+        transition: opacity 0.2s;
+        color: #fff;
+        border-radius: 30px;
+        background: #0b4673;
+
+        i {
+            margin-top: 3px;
+        }
+
+        &:hover {
+            opacity: 0.6;
+            color: #fff;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        a {
+            display: none;
+        }
+    }
+}
+
+footer {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 34px;
+    clear: both;
+    padding: 25px 0;
+    text-align: center;
+    color: #a6a6a6;
+
+    span {
+        display: block;
+    }
+
+    a {
+        color: #5498dc;
+    }
+
+    .smallnav {
+        display: none;
+
+        @media screen and (max-width: 906px) {
+            display: block;
+        }
+    }
+}
+
+.graybar {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    margin: 10px 0;
+    padding: 17px 20px 15px;
+    color: #676c77;
+    border-radius: 4px;
+    background: #eee;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.error404 .graybar {
+    margin-top: 50px;
+}
+
+.pace .pace-progress {
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    height: 2px;
+    -webkit-transition: width 1s;
+       -moz-transition: width 1s;
+         -o-transition: width 1s;
+            transition: width 1s;
+    background: #29d;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.footer-sidebar {
+    overflow: hidden;
+
+    .footer-widget {
+        float: left;
+        width: 45%;
+        list-style: none;
+        text-align: left;
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+    }
+
+    .widget-2 {
+        float: right;
+        text-align: right;
+    }
+}
+
+#wp-calendar {
+    width: 100%;
+    border: 0;
+}
+
+#wp-calendar caption {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: right;
+    color: #333;
+}
+
+#wp-calendar thead {
+    font-size: 10px;
+}
+
+#wp-calendar thead th {
+    padding-bottom: 10px;
+    border: 0;
+}
+
+#wp-calendar tbody {
+    color: #aaa;
+}
+
+#wp-calendar tbody td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #fff;
+    background: #f5f5f5;
+}
+
+#wp-calendar tbody td:hover {
+    background: #fff;
+}
+
+#wp-calendar tbody .pad {
+    background: none;
+}
+
+#wp-calendar tfoot #next {
+    font-size: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+#wp-calendar tfoot td {
+    border: 0;
+}
+
+#wp-calendar tfoot #prev {
+    font-size: 10px;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.grid {
+    overflow: hidden;
+    margin: 50px 0;
+
+    .half {
+        width: 47.5%;
+    }
+
+    .left {
+        margin: 0;
+        margin-right: 2.5%;
+    }
+
+    .right {
+        margin: 0;
+        margin-left: 2.5%;
+    }
+
+    p.left,
+    p.right {
+        font-weight: 400;
+    }
+
+    .left *:last-child,
+    .right *:last-child {
+        margin-bottom: 0;
+    }
+
+    .left *:first-child,
+    .right *:first-child {
+        margin-top: 0;
+    }
+
+    p {
+        font-weight: 400;
+        clear: none;
+    }
+
+    p:nth-of-type(1) {
+        font-weight: 400;
+    }
+
+    @media (max-width: 585px) {
+        .left,
+        .right {
+            float: none;
+            width: 100%;
+            margin: 0;
+        }
+
+        .right {
+            margin-top: 50px;
+        }
+    }
+}

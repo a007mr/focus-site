@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Тренинг Внедрение системы OKR в компании by Focus">
+	<link href="../img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="../img/favicon.png" rel="apple-touch-icon" sizes="32x32">
+	<title>Внедрение системы OKR в компании by Focus</title>
+
+	<meta property="og:title" content="Focus - OKR платформа для командной работы">
+	<meta property="og:site_name" content="Focus">
+	<meta property="og:url" content="http://usefocus.co/ru">
+	<meta property="og:description" content="Focus - сервис для командной работы и повышения вовлеченности сотрудников">
+	<meta property="og:image" content="img/hero_ru.png">
+	
+	<!-- Bootstrap -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="../css/style.css?falf" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" type="text/css"/>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/animate.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-145269853-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-145269853-1');
+	</script>
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+	   ym(54762823, "init", {
+	        clickmap:true,
+	        trackLinks:true,
+	        accurateTrackBounce:true,
+	        webvisor:true
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/54762823" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+
+	<!-- Heap Analytics -->
+    <script type="text/javascript">
+      window.heap = window.heap || [], heap.load = function (e, t) { window.heap.appid = e, window.heap.config = t = t || {}; var r = t.forceSSL || "https:" === document.location.protocol, a = document.createElement("script"); a.type = "text/javascript", a.async = !0, a.src = (r ? "https:" : "http:") + "//cdn.heapanalytics.com/js/heap-" + e + ".js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(a, n); for (var o = function (e) { return function () { heap.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }, p = ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"], c = 0; c < p.length; c++)heap[p[c]] = o(p[c]) };
+      heap.load("2404494712");
+    </script>
+    <!-- End of Heap -->
+
+
+</head>
+<body>
+
+	<nav class="navbar bg-light">
+		<div class="container navigation">
+			<div class="logo">
+				<a href="https://usefocus.co/ru"><img src="../img/logo/logo.png" alt="Focus logo" class="logo_img" width="122" height="35"></a>
+			</div>
+
+			<div class="navigation_items nav_list">
+				<ul class="menu lp_menu">
+					<li class="menu-item"><a href="#why" class="landing_font">Об OKR</a></li>
+					<li class="menu-item"><a href="#benefits" class="landing_font">Преимущества</a></li>
+					<li class="menu-item"><a href="#program" class="landing_font">Программа</a></li>
+					<li class="menu-item"><a href="#expert" class="landing_font">Тренер</a></li>
+					<li class="menu-item pl-0"><a href="#price" class="landing_font">Стоимость</a></li>
+				</ul>
+			</div>
+
+			<!-- <div class="btn_nav">
+				<a href="#cta" class="btn btn-light">Получить Демо Доступ</a>
+			</div> -->
+
+			<div class="btn_nav">
+				<!-- <a href="https://usefocus.co/demo_ru" class="modal__btn btn btn-light" onclick="gtag('event', 'btn', {'event_category': 'knopka9', 'event_action': 'submit9'});yaCounter54762823.reachGoal('demo_ru'); return true;">Записаться на Тренинг</a> -->
+				<a href="https://landing.mailerlite.com/webforms/landing/s9v0v7" class="btn btn-light" onclick="gtag('event', 'btn', {'event_category': 'knopka9', 'event_action': 'submit9'});yaCounter54762823.reachGoal('demo_ru'); return true;">Записаться на Тренинг</a>
+			</div>
+
+			<div class="menu_icon" id="menu_icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</nav>
+
+
+	<section id="slack">
+		<div class="container hero__slack">
+			<div class="hero__slack-main">
+				<h1 class="h1_lp fs5">Внедрение OKR в компании</h1>
+				<p class="landing_font lead fs2_5 py-2"><b>5-ти дневный онлайн курс</b> с проверкой домашних заданий<br> и разработкой индивидуального роадмапа внедрения </p>
+				<p class="landing_font lead fs2_5 pt-2-xs">21 сентября - 25 сентября </p>
+				<!-- <a href="#cta" class="btn btn-primary">Get Early Access</a> -->
+				<div class="btn__container btn__container-slack flex align-start justify-center mt-3 wrap">
+					<a  href="#why" class="btn btn-primary">Узнать Подробней</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section id="why">
+		<div class="container">
+			<div class="text-center bg-primary_light2 p-4 shadow br-12">
+				<p class="blue medium mt-5">Почему компании переходят на OKR?</p>
+				<!-- <h2 class="fs-40 white mt-1 mb-3 mt-3-s">Break out of micromanagement</h2> -->
+				<p class="landing_font lead fs2 pt-1 text-left-xs">Старый способ постановки целей на год, с каскадированием сверху-вниз <b>перестал работать</b>. <br>С системой OKR Google стала компанией №1 на своем рынке.</p>
+				<p class="landing_font lead fs2 py-2 text-left-xs mb-3">Система OKR фокусирует команду на самых важных целях и <b>повышает вовлеченность сотрудников</b>. OKR объединяет компанию и делает так, что вы становитесь одной командой. <br>OKR повышает самоуправление и скорость реагирования на изменения.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="benefits">
+		<div class="container benefits__icon">
+			<div class="section_header pb-2">
+				<h2>Что Вы Получите После Курса?</h2>
+				<!-- <p class="landing_font lead fs1_8">Focus концентрирует вашу команду <b>на самом важном</b>. Больше не нужны долгие переписки в мессенджерах, длинные письма и бесконечные встречи - фокусируйтесь на том, что реально важно. Определите <b>главные цели и ключевые результаты</b> для успеха. Отслеживайте их выполнение и сократите количество встреч с помощью <b>дневных и недельных отчетов</b>. </p> -->
+			</div>
+			<div class="features">
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Индивидуальный роадмап внедрения OKR в вашей компании</p>
+				</div>
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Пошаговый алгоритм внедрения OKR</p>
+				</div>
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Понимание, как продать идею OKR команде</p>
+				</div>
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Рабочие кейсы использования OKR</p>
+				</div>
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Чек-листы и инструкции по внедрению OKR</p>
+				</div>
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Закрытый сообщество единомышленников</p>
+				</div>
+
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Практические домашние задания с проверкой от экспертов</p>
+				</div>
+
+				<div class="my-1">
+					<p class="fs2 w-90 lh-30 inline-block checklist checklist-blue pl-3 mr-3">Интенсивы от собственников и HR-директоров, кто уже внедрил OKR</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="audience">
+		<div class="container benefits__icon">
+			<div class="section_header">
+				<h2>Для кого курс?</h2>
+			</div>
+			<div class="features features__slack flex space-between align-baseline benefits__icon-grid">
+				<div class="feature-item benefits__icon-item benefits__icon-item-first benefits__icon-item-men">
+					<h6 class="feature-title pt-3 pb-1">Для генеральных директоров и собственников компаний</h6>
+				</div>
+				<div class="feature-item benefits__icon-item benefits__icon-item-second benefits__icon-item-men">
+					<h6 class="feature-title pt-3 pb-1">Для HR-директоров </h6>
+				</div>
+				<div class="feature-item benefits__icon-item benefits__icon-item-third benefits__icon-item-men">
+					<h6 class="feature-title pt-3 pb-1">Для руководителей подразделений</h6>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="how">
+		<div class="container">
+			<div class="pb-3 pt-1 text-center">
+				<h2>Что говорят об OKR?</h2>
+			</div>
+			<div class="how_items">
+				<div class="how-item py-4">
+					<img src="../img/consulting/larri.jpg" alt="How it works" class="ma-w50">
+					<div class="how-item-text">
+						<!-- <h6 class="feature-title pb-2 ml-3">Schedule daily standup and/or weekly update</h6> -->
+						<p class="landing_font ml-3">«Жаль, что у меня не было этой системы девятнадцать лет назад, когда мы основали Google. Или даже раньше, когда моей единственной «компанией» был я сам! Хотя у меня всегда это получалось мучительно, хорошие идеи с блестящим исполнением – единственный способ творить чудеса. Для этого и нужен метод ». <br><br><span>- <i>Сооснователь Google, Ларри Пейдж</i></span></p>
+					</div>
+					
+				</div>
+				<div class="how-item py-5 my-2 row-reverse">
+					<img src="../img/consulting/dick.jpg" alt="How it works" class="ma-w50">
+					<div class="how-item-text">
+						<!-- <h6 class="feature-title pb-2 mr-3">Run standups or updates </h6> -->
+						<p class="landing_font mr-3">«Одна из вещей, которую я забрал из Google, были OKR. Мы внедрили OKR в Twitter - постановку квартальных целей, отслеживание прогресса выполнения и использование OKR, как средства коммуникации, чтобы показать, что каждый делает. Я считаю, что все прошло супер эффективно. Особенно, в плане коммуникации между разными командами, когда все видят что мы сейчас делаем и над чем каждый член команды работает». <br><br><span>- <i>CEO Twitter, Dick Costolo</i></span> </p>
+					</div>
+					
+				</div>
+				<div class="how-item py-4">
+					<img src="../img/consulting/john.jpg" alt="How it works" class="ma-w50">
+					<div class="how-item-text">
+						<p class="landing_font ml-3">«OKR позволяют выявить ваши основные цели. Они направляют усилия и координируют работу. Они связывают между собой разные этапы производства, гарантируют сплоченность и осмысленность работы всей организации». <br><br><span>- <i> Автор «Измеряйте самое важное», Джон Дорр</i></span></p>
+					</div>
+				</div>
+				<!-- <div class="how-item py-4">
+					<img src="../img/consulting/larri.jpg" alt="How it works" class="ma-w50">
+					<div class="how-item-text">
+						<p class="landing_font ml-3">«OKR помогали нам вырасти в 10 раз неоднократно. Они помогли нам сделать нашу сумасшедшую миссию "организовать всю имеющуюся информацию" реальной. Они помогли мне и всей команду сфокусироваться на самом важном, когда это имело больше всего значения». <br><br><span>- <i> Сооснователь Google, Ларри Пейдж</i></span></p>
+					</div>
+				</div> -->
+
+			</div>
+		</div>
+	</section>
+
+	<section class="schedule">
+		<div class="section_header pb-2">
+				<h2>Расписание</h2>
+				<p class="landing_font lead fs1_8">Дата проведения: с 21 по 25 сентября</p>
+				<p class="landing_font lead fs1_8">Время заниятий: с 10 до 13 мск или с 17 до 20 мск</p>
+				<p class="landing_font lead fs1_8">Формат: онлайн занятия</p>
+			</div>
+	</section>
+
+	<section id="program">
+		<div class="container">
+			<div class="pb-3 pt-1 text-center">
+				<h2>Программа</h2>
+			</div>
+			<div class="how_items">
+				<div class="how-item py-4 flex space-between align-center">
+					<!-- <img src="../img/how/4_ru.png" alt="How it works" class="ma-w50 shadow"> -->
+					<div class="bg-blue w-50 text-center br-12 h-200px flex align-center justify-center shadow">
+						<p class="bold white fs2_5">День 1: Основы OKR</p>
+					</div>
+					<div class="how-item-text mra ml-3">
+						<h6 class="feature-title pb-2 ml-3">День 1: Основы OKR</h6>
+						<p class="landing_font ml-3">- Разберем, что такое OKR </p>
+						<p class="landing_font ml-3">- Отличия OKR от KPI и MBO </p>
+						<p class="landing_font ml-3">- Основные принципы OKR </p>
+						<p class="landing_font ml-3">- История создания OKR </p>
+					</div>
+					
+				</div>
+				<div class="how-item py-5 my-2 flex space-between align-center">
+					<div class="bg-blue w-50 text-center br-12 h-200px flex align-center justify-center shadow">
+						<p class="bold white fs2_5">День 2: Создание OKR</p>
+					</div>
+					<div class="how-item-text mra ml-3">
+						<h6 class="feature-title pb-2 ml-3">День 2: Запуск OKR в компании</h6>
+						<p class="landing_font ml-3">- Создадим первую версию OKR для вашей компании </p>
+						<p class="landing_font ml-3">- Разберем пошаговый алгоритм внедрения OKR </p>
+						<p class="landing_font ml-3">- Проговорим, как "продать" идею OKR команде </p>
+					</div>
+					
+				</div>
+				<div class="how-item py-4 flex space-between align-center">
+					<div class="bg-blue w-50 text-center br-12 h-200px flex align-center justify-center shadow">
+						<p class="bold white fs2_5">День 3: Работа с OKR</p>
+					</div>
+					<div class="how-item-text mra ml-3">
+						<h6 class="feature-title pb-2 ml-3">День 3: Ведение и работа с OKR</h6>
+						<p class="landing_font ml-3">- Разберем, как правильно работать с OKR </p>
+						<p class="landing_font ml-3">- Проработаем механику обновлений OKR </p>
+						<p class="landing_font ml-3">- Проговорим необходимые встречи для работы с OKR</p>
+					</div>
+				</div>
+
+				<div class="how-item py-4 flex space-between align-center">
+					<div class="bg-blue w-50 text-center br-12 h-200px flex align-center justify-center shadow">
+						<p class="bold white fs2_5">День 4: OKR Циклы</p>
+					</div>
+					<div class="how-item-text mra ml-3">
+						<h6 class="feature-title pb-2 ml-3">День 4: OKR циклы и ревью</h6>
+						<p class="landing_font ml-3">- Разберем как правильно проводить анализ OKR </p>
+						<p class="landing_font ml-3">- Проработаем механику презентации результатов </p>
+						<p class="landing_font ml-3">- Сделаем на кейсе анализ OKR</p>
+					</div>
+					
+				</div>
+
+
+				<div class="how-item py-4 flex space-between align-center">
+					<div class="bg-blue w-50 text-center br-12 h-200px flex align-center justify-center shadow">
+						<p class="bold white fs2_5">День 5: Кейсы Внедрения</p>
+					</div>
+					<div class="how-item-text mra ml-3 w-40">
+						<h6 class="feature-title pb-2 ml-3">День 5: Инструменты Автоматизации и Кейсы Внедрения</h6>
+						<p class="landing_font ml-3">- Разберем кейсы реальных внедрений OKR </p>
+						<p class="landing_font ml-3">- Проработаем 3 шаблона для ведения OKR в Google Таблицах </p>
+						<p class="landing_font ml-3">- Изучим Focus, инструмент для автоматизации OKR</p>
+					</div>
+					
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<section id="expert">
+		<h2 class="text-center">Тренер</h2>
+		<div class="container flex align-center justify-center my-1 flex-column-xs">
+			<div class="left-image ml-2-xl mb-2">
+				<img class="round-img w-200px h-200px" src="../img/people/anton.png" alt="Anton Cherkasov" title="" width="200" height="200" />
+			</div>
+			<div class="">
+				<div class="hero__slack-main">
+					<p class="landing_font fs2 pt-3 w-80 mxa text-left"><b>Антон Черкасов</b></p>
+					<p class="landing_font lead fs2 pt-1 w-80 mxa mb-3 text-left">Основатель и генеральный директор OKR платформы Focus. <br>Работал в компаниях Wildberries и Газпромнефть. <br><br>12 лет управления командами, 6 лет в Agile и разработке продуктов. <br>Специализируется на OKR и управлении высокоэффективными командами.</p>
+				</div>
+				
+				<div class="hero__slack-main">
+					<p class="landing_font lead fs2 pt-3 w-80 mxa bold text-left"><b>+ Приглашенные Эксперты</b></p>
+					<p class="landing_font lead fs2 pt-1 w-80 mxa mb-3 text-left">3 часовых интенсива с собственниками и HR-директорами компаний, которые уже внедрили OKR в своих компаниях.</p>
+				</div>
+			</div>
+		</div>
+			
+	</section>
+
+
+
+	<div class="mxa" id="price">
+
+			<h2 class="text-center">Стоимость</h2>
+
+			<div class="flex widgets__pricing space-around my-2">
+				<div class="pricing_item text-center py-3 px-4 bg-white br-6">
+					<p class="fs2_5 bold">Стандарт</p>
+					<p class="fs2 blue my-1">30 000 руб</p>
+					<p class="small mb-xs">5 занятий по 3 часа</p>
+					<p class="small mb-xs">Проверка домашних заданий</p>
+					<p class="small mb-xs">Закрытый чат единомышленников</p>
+					<p class="small mb-xs">1 час сопровождения после тренинга</p>
+
+					<!-- <a href="https://app.usefocus.co/signup" class="btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka5', 'event_action': 'submit5'});ym(54762823,'reachGoal','get_started_pricing'); return true;">Get Started</a> -->
+					<!-- <a href="https://usefocus.co/demo" class="modal__btn btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka7', 'event_action': 'submit7'});yaCounter54762823.reachGoal('demo'); return true;">Выбрать Стандарт</a> -->
+					<a href="https://landing.mailerlite.com/webforms/landing/s9v0v7" class="btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka7', 'event_action': 'submit7'});yaCounter54762823.reachGoal('demo'); return true;">Выбрать Стандарт</a>
+				</div>
+
+				<div class="pricing_item pricing_item_active text-center bg-profile py-3 px-4 br-6">
+					<p class="fs2_5 bold white">Про 🚀</p>
+					<p class="fs2 white my-1">60 000 руб</p>
+					<p class="small mb-xs white">Всё, что в Стандарте</b></p>
+					<p class="small mb-xs white">А также:</p>
+					<p class="small mb-xs white">Индивидуальный роадмап</p>
+					<p class="small mb-xs white">1 месяц сопровождения после тренинга</p>
+					<!-- <p class="small mb-xs white">6-ти месячный доступ к Focus</p> -->
+					
+					<!-- <a href="https://app.usefocus.co/signup" class="btn btn-pricing mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka5', 'event_action': 'submit5'});ym(54762823,'reachGoal','get_started_pricing'); return true;">Start Free Trial</a> -->
+					<!-- <a href="https://usefocus.co/demo" class="modal__btn btn btn-pricing mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka7', 'event_action': 'submit7'});yaCounter54762823.reachGoal('demo'); return true;">Выбрать Про</a> -->
+					<a href="https://landing.mailerlite.com/webforms/landing/s9v0v7" class="btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka7', 'event_action': 'submit7'});yaCounter54762823.reachGoal('demo'); return true;">Выбрать Про</a>
+				</div>
+
+				<div class="pricing_item text-center py-3 px-4 bg-white br-6">
+					<p class="fs2_5 bold">Гуру</p>
+					<p class="fs2 blue my-1">100 000 руб</p>
+					<p class="small mb-xs">Всё, что в Про</p>
+					<p class="small mb-xs">А также:</p>
+					<p class="small mb-xs">Вводный однодневный тренинг для команды</p>
+					<p class="small mb-xs">3 месяца сопровождения после тренинга</p>
+					<!-- <p class="small mb-xs">Годовой доступ к Focus</p> -->
+
+					<!-- <a href="https://usefocus.co/demo" class="modal__btn btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka6', 'event_action': 'submit6'});ym(54762823,'reachGoal','get_started_pricing_enterprise'); return true;">Выбрать Гуру</a> -->
+					<a href="https://landing.mailerlite.com/webforms/landing/s9v0v7" class="btn-secondary btn-secondary-comment mt-2" onclick="gtag('event', 'btn', {'event_category': 'knopka7', 'event_action': 'submit7'});yaCounter54762823.reachGoal('demo'); return true;">Выбрать Гуру</a>
+				</div>
+			</div>
+
+			<div class="text-center my-2">
+				<p class="grey small">* 14-ти дневная гарантия возврата денег </p>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- <section id="ateam">
+		<div class="container">
+			<div class="section_header">
+				<h2>Станьте командой высшего класса</h2>
+			</div>
+			<div class="explanation">
+				<img src="../img/why.png" alt="Focus image">
+				<p class="landing_font lead fs1_8">Создание вовлеченной команды - часто непростой процесс. <br><br> Мы создали Focus, чтобы помочь компаниям повышать эффективность работы. Станьте командой высочайшего класса, создав культуру вовлеченности и прозрачности.</p>
+			</div>
+		</div>
+	</section> -->
+
+	<section id="cta">
+		<div class="container">
+			<div class="text-center bg-primary_light2 p-5 shadow br-12 p-3-xs">
+				<div class="flex align-center space-around my-2 flex-column-xs">
+					<div class="cta__left text-left my-5 mt-3-xs w-60">
+						<h2 class=" mb-1 mb-3-xs">Хотите внедрить OKR?</h2>
+						<!-- <p class="landing_font lead white">7-day free trial. Cancel anytime, no questions asked.</p> -->
+						<p class="lead">Записывайтесь на курс по внедрению OKR от Focus, чтобы повысить эффективность компании</p>
+					</div>
+
+					<div class="cta__right">
+						<!-- <a href="https://usefocus.co/demo_ru" type="submit" class="modal__btn btn_blue mxa block-wp text-center" onclick="gtag('event', 'btn', {'event_category': 'knopka9', 'event_action': 'submit9'});yaCounter54762823.reachGoal('demo_ru'); return true;">Записаться на Курс</a> -->
+						<a href="https://landing.mailerlite.com/webforms/landing/s9v0v7" type="submit" class="btn_blue mxa block-wp text-center" onclick="gtag('event', 'btn', {'event_category': 'knopka9', 'event_action': 'submit9'});yaCounter54762823.reachGoal('demo_ru'); return true;">Записаться на Курс</a>
+					</div>
+
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<div id="modal-lp" class="modal modal-lp">
+        <div class="modal-content w-100-xs">
+
+        	<div class="modal-header pt-3 pb-3 px-4">
+                <button class="modal-close no_btn">&times;</button>
+                <h2>Оставить Заявку</h2>
+             </div>
+
+			<div class="modal-body px-4">
+				<p class="lead pb-3">Чтобы оставить заявку на курс "Внедрение OKR в компании", заполните форму ниже</p>
+
+				<!-- Subscribe form -->
+			<div id="mlb2-2524469" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-2524469">
+			  <div class="ml-form-align-center">
+			    <div class="ml-form-embedWrapper embedForm">
+			      <div class="ml-form-embedBody ml-form-embedBodyDefault row-form form form-detail">
+
+					<form class="ml-block-form w-500px" action="https://app.mailerlite.com/webforms/submit/s9v0v7" data-code="s9v0v7" method="post" target="_blank">
+			          <div class="landing form_detail">
+
+
+						<div class="ml-field-group ml-field-name ml-validate-required field_email field">
+							<input type="text" class="name" placeholder="Ваше Имя" required data-inputmask="" name="fields[name]" autocomplete="name">
+						</div>
+
+						<div class="my-1 pt-1 ml-field-group ml-field-email ml-validate-email ml-validate-require field_email field">
+							<input type="email" class="email" placeholder="Ваш Email" data-inputmask="" name="fields[email]" autocomplete="email" required>
+						</div>
+
+			          	<div class="my-1 pt-1 ml-field-group ml-field-email ml-validate-email ml-validate-require field_email field">
+							<input type="text" class="phone" placeholder="Ваш Телефон" data-inputmask="" name="fields[phone]" autocomplete="" required>
+						</div>
+
+						<div class="field_size field my-1 pt-1 ml-field-group ml-field-state ml-validate-required">
+							<select class="lp_select input-border input-border-none input-border-bottom-grey custom-select mt-2" placeholder="Выберите Тариф" name="fields[state]" required>
+								  <option value="" disabled selected>Выберите Тариф</option>
+			                      <option value="1">Стандарт (30 000 руб)</option>
+			                      <option value="2">Про (60 000 руб)</option>
+			                      <option value="3">Гуру (100 000 руб)</option>
+							</select>
+						</div>
+
+						<div class="my-1 pt-1 ml-field-group ml-field-email ml-validate-email ml-validate-require field_email field">
+							<input type="text" class="name" placeholder="Промокод (если есть)" data-inputmask="" name="fields[ZIP]" autocomplete="">
+						</div>
+			          
+			          <style type="text/css">
+			            .ml-form-recaptcha {
+			              margin-bottom: 20px;
+			            }
+			          
+			            .ml-form-recaptcha.ml-error iframe {
+			              border: solid 1px #ff0000;
+			            }
+			          </style>
+			          <input type="hidden" name="ml-submit" value="1">
+
+			          <div class="form_button pt-1 text-center">
+						<button type="submit" class="btn btn-primary my-2 miw-300 lh-30" onclick="gtag('event', 'btn', {'event_category': 'knopka8', 'event_action': 'submit8'});ym(54762823,'reachGoal','demo_cta'); return true;">Оставить Заявку
+						</button>
+					  </div>
+
+			         </div>
+			        </form>	
+
+		          </div>
+		      	<div class="ml-form-successBody row-success" style="display: none">
+			        <div class="ml-form-successContent">
+			          <h4 class="fs2_5 text-center pt-3 bold">Спасибо за регистрацию!</h4>
+			          <p class="landing_font lead white text-center">Мы свяжемся с Вами в течение суток и ответим на все Ваши вопросы. Хорошего дня!</p>
+			        </div>
+		      	</div>
+		       </div>
+		      </div>
+		    </div>
+			
+			<script>
+			  function ml_webform_success_2524469(){try{window.top.location.href="https://usefocus.co/course_success_ru"}catch(s){window.location.href="https://usefocus.co/course_success_ru"}}
+			</script>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="footer_nav">
+				<ul class="menu">
+					<li class="menu-item"><a href="#why">Об OKR</a></li>
+					<li class="menu-item"><a href="#benefits">Преимущества</a></li>
+					<li class="menu-item"><a href="#program">Программа</a></li>
+					<li class="menu-item"><a href="#expert">Тренер</a></li>
+					<li class="menu-item pl-0"><a href="#price">Стоимость</a></li>
+				</ul>
+			</div>
+			<div class="love mb-xs">
+				<span class="landing_font">Сделано с 😍</span>	
+			</div>
+			<div class="copyright">
+				<span class="landing_font">© 2020 Focus. All rights reserved.</span>	
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="https://static.mailerlite.com/js/w/webforms.min.js?v5c5d99c28cfe49b41fe82455507d7558" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="../js/scripts.js"></script>
+	<script src="../js/bootstrap.js"></script>
+<!-- 	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script> -->
+
+</body>
+</html>
